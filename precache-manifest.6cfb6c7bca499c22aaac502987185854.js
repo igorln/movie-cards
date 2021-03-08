@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8436447a945425a6bd009391bebde728",
+    "revision": "76faa6a071e82596fa60477fff6b1ca5",
     "url": "igorln.github.io/movie-cards/index.html"
   },
   {
-    "revision": "ae2ee4182c479f9a9b98",
+    "revision": "43cce80e120fd75ab8fd",
     "url": "igorln.github.io/movie-cards/static/css/main.38d6a80c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "igorln.github.io/movie-cards/static/js/2.be628a0f.chunk.js"
   },
   {
-    "revision": "ae2ee4182c479f9a9b98",
-    "url": "igorln.github.io/movie-cards/static/js/main.3fbb8cdd.chunk.js"
+    "revision": "43cce80e120fd75ab8fd",
+    "url": "igorln.github.io/movie-cards/static/js/main.099faecd.chunk.js"
   },
   {
     "revision": "2bbaf5643efba0888d25",
