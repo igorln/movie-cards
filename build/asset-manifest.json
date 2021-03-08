@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "igorln.github.io/movie-cards/static/css/main.38d6a80c.chunk.css",
+    "main.js": "igorln.github.io/movie-cards/static/js/main.3fbb8cdd.chunk.js",
+    "main.js.map": "igorln.github.io/movie-cards/static/js/main.3fbb8cdd.chunk.js.map",
+    "runtime-main.js": "igorln.github.io/movie-cards/static/js/runtime-main.14d9e827.js",
+    "runtime-main.js.map": "igorln.github.io/movie-cards/static/js/runtime-main.14d9e827.js.map",
+    "static/js/2.be628a0f.chunk.js": "igorln.github.io/movie-cards/static/js/2.be628a0f.chunk.js",
+    "static/js/2.be628a0f.chunk.js.map": "igorln.github.io/movie-cards/static/js/2.be628a0f.chunk.js.map",
+    "index.html": "igorln.github.io/movie-cards/index.html",
+    "precache-manifest.d837f3ab72ff475f4c1dfd0c3dad8e5b.js": "igorln.github.io/movie-cards/precache-manifest.d837f3ab72ff475f4c1dfd0c3dad8e5b.js",
+    "service-worker.js": "igorln.github.io/movie-cards/service-worker.js",
+    "static/css/main.38d6a80c.chunk.css.map": "igorln.github.io/movie-cards/static/css/main.38d6a80c.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14d9e827.js",
+    "static/js/2.be628a0f.chunk.js",
+    "static/css/main.38d6a80c.chunk.css",
+    "static/js/main.3fbb8cdd.chunk.js"
+  ]
+}
