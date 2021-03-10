@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
       <div className="movie-card-header"><p className="bg-warning pe-4 ps-4 rounded fw-bold fs-1">Movie Cards</p></div>
       <Switch>
-        <Route path="/movies/:id/edit" component={ EditMovie } />
-        <Route path="/movies/new" component={ NewMovie } />
-        <Route path="/movies/:id" component={ MovieDetails } />
-        <Route path="/" exact component={ MovieList } />
+        <Route path="/movie-cards/movies/:id/edit" component={ EditMovie } />
+        <Route path="/movie-cards/movies/new" component={ NewMovie } />
+        <Route path="/movie-cards/movies/:id" component={ MovieDetails } />
+        <Route path="/movie-cards" exact component={ MovieList } />
         <Route component={ NotFound } />
       </Switch>
     </BrowserRouter>
