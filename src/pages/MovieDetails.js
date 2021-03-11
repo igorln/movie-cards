@@ -30,13 +30,21 @@ class MovieDetails extends Component {
     await movieAPI.deleteMovie(id);
   }
 
+  imageRender() {
+  const { imagePath } = this.state.movie;
+  if ( imagePath.includes('images/') ) {
+    return `/${imagePath}`
+  }
+  return imagePath;
+}
+
   render() {
     const { movie } = this.state;
     if (movie === undefined) { return <Loading />; }
     return (
       <div className="text-light" data-testid="movie-details">
         <div className="d-flex justify-content-around mt-4">
-          <img className="border border-warning border-5 rounded width-45 height-max-367" alt="Movie Cover" src={ movie.imagePath }/>
+          <img className="border border-warning border-5 rounded width-45 height-max-367" alt="Movie Cover" src={ this.imageRender() }/>
           <div className="text-center width-45 border border-warning align-self-center">
             <p>{ `Title: ${movie.title}` }</p>
             <p>{ `Subtitle: ${movie.subtitle}` }</p>
@@ -46,9 +54,9 @@ class MovieDetails extends Component {
           </div>
         </div>
         <div className="d-flex justify-content-evenly m-5">
-          <Link className="btn btn-primary width-83px" to="/">BACK</Link>
-          <Link className="btn btn-secondary width-83px" to={ `/movies/${movie.id}/edit` }>EDIT</Link>
-          <Link className="btn btn-danger width-83px" to="/" onClick={ () => this.deleteMovie(movie.id) }>DELETE</Link>
+          <Link className="btn btn-primary width-83px" to="/movie-cards">BACK</Link>
+          <Link className="btn btn-secondary width-83px" to={ `/movie-cards/${movie.id}/edit` }>EDIT</Link>
+          <Link className="btn btn-danger width-83px" to="/movie-cards" onClick={ () => this.deleteMovie(movie.id) }>DELETE</Link>
         </div>
       </div>
     );

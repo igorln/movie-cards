@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <div className="movie-card-header"><p className="bg-warning pe-4 ps-4 rounded fw-bold fs-1">Movie Cards</p></div>
       <Switch>
-        <Route path="/movie-cards/movies/:id/edit" component={ EditMovie } />
-        <Route path="/movie-cards/movies/new" component={ NewMovie } />
-        <Route path="/movie-cards/movies/:id" exact component={ MovieDetails } />
+        <Route path="/movie-cards/:id/edit" component={ EditMovie } />
+        <Route path="/movie-cards/new" component={ NewMovie } />
+        <Route path="/movie-cards/:id" exact component={ MovieDetails } />
         <Route path="/movie-cards" component={ MovieList } />
         <Route component={ NotFound } />
       </Switch>

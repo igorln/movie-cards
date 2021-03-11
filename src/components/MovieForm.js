@@ -176,7 +176,7 @@ class MovieForm extends React.Component {
             {this.renderRatingInput()}
           </div>
           <div className="width-45 d-flex justify-content-evenly">
-            <Link className="btn btn-primary width-83px p-3" to="/">BACK</Link>
+            <Link className="btn btn-primary width-83px p-3" to="/movie-cards">BACK</Link>
             {this.renderSubmitButton()}
           </div>
         </form>

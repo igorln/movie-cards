@@ -32,7 +32,7 @@ class MovieList extends Component {
 
     return (
       <>
-        <Link className="btn btn-warning mt-4 right" to="/movies/new">ADD CARD</Link>
+        <Link className="btn btn-warning mt-4 right" to="/movie-cards/new">ADD CARD</Link>
         <div className="movie-list" data-testid="movie-list">
           { movies.length === 0 ? <Loading />
             : movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
