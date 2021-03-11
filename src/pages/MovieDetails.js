@@ -33,7 +33,7 @@ class MovieDetails extends Component {
   imageRender() {
   const { imagePath } = this.state.movie;
   if ( imagePath.includes('images/') ) {
-    return `/${imagePath}`
+    return `../movie-cards/${imagePath}`
   }
   return imagePath;
 }
@@ -54,9 +54,9 @@ class MovieDetails extends Component {
           </div>
         </div>
         <div className="d-flex justify-content-evenly m-5">
-          <Link className="btn btn-primary width-83px" to="/movie-cards">BACK</Link>
+          <Link className="btn btn-primary width-83px" to="/movie-cards/">BACK</Link>
           <Link className="btn btn-secondary width-83px" to={ `/movie-cards/${movie.id}/edit` }>EDIT</Link>
-          <Link className="btn btn-danger width-83px" to="/movie-cards" onClick={ () => this.deleteMovie(movie.id) }>DELETE</Link>
+          <Link className="btn btn-danger width-83px" to="/movie-cards/" onClick={ () => this.deleteMovie(movie.id) }>DELETE</Link>
         </div>
       </div>
     );

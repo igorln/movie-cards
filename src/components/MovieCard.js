@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 class MovieCard extends React.Component {
   render() {
-    const { movie } = this.props;
+    const { imagePath, title, storyline, id } = this.props.movie;
     return (
       <div className="movie-card" data-testid="movie-card">
-        <img className="movie-card-image height-max-167" src={ movie.imagePath } alt={ `Banner of ${movie.title}` } />
+        <img className="movie-card-image height-max-167" src={ `${imagePath}` } alt={ `Banner of ${title}` } />
         <div className="movie-card-body">
-          <p className="movie-card-title">{ movie.title }</p>
-          <p className="movie-card-storyline">{ movie.storyline }</p>
-          <Link to={ `/movie-cards/${movie.id}` } params={ movie.id }>SEE DETAILS</Link>
+          <p className="movie-card-title">{ title }</p>
+          <p className="movie-card-storyline">{ storyline }</p>
+          <Link to={ `/movie-cards/${id}` } params={ id }>SEE DETAILS</Link>
         </div>
       </div>
     );
